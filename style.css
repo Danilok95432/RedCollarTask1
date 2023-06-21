@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+.phone{
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9475 3.07318C11.2466 3.77616 11.2466 4.91601 11.9475 5.619L13.2166 6.89191C13.4712 7.14728 13.7832 7.3099 14.1109 7.37978C14.4616 7.45456 14.7845 7.77059 14.6883 8.11626C14.2434 9.7154 13.3895 11.1703 12.2115 12.3365C11.0334 13.5028 9.57182 14.3401 7.97178 14.7653C7.683 14.842 7.42097 14.5757 7.37977 14.2796C7.32769 13.9054 7.15817 13.5445 6.87127 13.2568L5.60217 11.9838C4.90129 11.2808 3.76485 11.2808 3.06397 11.9838L0.525661 14.5297C-0.17522 15.2327 -0.17522 16.3726 0.525661 17.0755C1.0367 17.5881 1.52271 18.229 2.13983 18.6193C2.80193 19.0187 3.6668 18.9644 4.43948 18.99C5.71553 19.0323 7.70468 18.9469 8.98662 18.6062C11.2539 18.0036 13.3249 16.8171 14.9943 15.1645C16.6638 13.5119 17.8736 11.4504 18.5042 9.18437C18.9243 7.67415 19 6.36072 19 4.55509C19 3.65227 18.9873 2.76143 18.506 2.05708C18.4441 1.96664 18.3732 1.8806 18.2931 1.80026L17.024 0.52724C16.3231 -0.175747 15.1866 -0.175747 14.4858 0.52724L11.9475 3.07318Z' fill='white'/%3E%3Cpath d='M8.03595 15.0069L8.03599 15.0069C9.67825 14.5705 11.1783 13.7111 12.3873 12.5142C13.5964 11.3173 14.4727 9.82427 14.9292 8.18328C15.0048 7.91133 14.9097 7.66223 14.7572 7.48393C14.607 7.30836 14.3891 7.18348 14.163 7.13527C13.8813 7.0752 13.6131 6.93552 13.3936 6.7154L12.1245 5.44249C11.5209 4.83707 11.5209 3.8551 12.1245 3.24969L14.6628 0.703751C15.266 0.0987497 16.2437 0.0987495 16.8469 0.703743L18.116 1.97677L18.1161 1.9768C18.1852 2.04618 18.2464 2.12033 18.2995 2.19813C18.7301 2.82816 18.75 3.63712 18.75 4.55509C18.75 6.35342 18.6743 7.63997 18.2633 9.11735C17.6444 11.3416 16.4569 13.3649 14.8184 14.9868L14.8184 14.9868C13.18 16.6088 11.1475 17.7732 8.92241 18.3646C7.67575 18.696 5.71538 18.7822 4.44776 18.7402C4.3222 18.736 4.19842 18.7339 4.07589 18.7318C3.80408 18.7271 3.53841 18.7226 3.27306 18.6961C2.89584 18.6583 2.55668 18.5781 2.2712 18.4066C1.98903 18.2277 1.73042 17.9876 1.47319 17.72C1.36972 17.6124 1.26047 17.4935 1.14978 17.3731C0.999814 17.21 0.847199 17.044 0.702702 16.899C0.0990993 16.2936 0.0990992 15.3116 0.702702 14.7062L3.24101 12.1603C3.8442 11.5553 4.82193 11.5553 5.42512 12.1603C5.42513 12.1603 5.42513 12.1603 5.42513 12.1603L6.69422 13.4333L6.69425 13.4333C6.94146 13.6812 7.08729 13.9917 7.13215 14.314C7.16082 14.52 7.26506 14.7154 7.41772 14.8498C7.57316 14.9867 7.79442 15.0711 8.03595 15.0069Z' stroke='white' stroke-opacity='0.3' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.telegram{
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='20' viewBox='0 0 23 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.0399 1.02493C21.0399 1.02493 23.1674 0.202504 22.9894 2.19967C22.9308 3.02209 22.3991 5.90085 21.9851 9.01412L20.5668 18.2372C20.5668 18.2372 20.4485 19.5884 19.3845 19.8234C18.321 20.058 16.7253 19.001 16.4296 18.766C16.193 18.5895 11.9972 15.9458 10.5198 14.6538C10.1058 14.301 9.63264 13.5964 10.5789 12.7739L16.7839 6.89916C17.4931 6.19454 18.2022 4.54969 15.2473 6.54685L6.97289 12.1274C6.97289 12.1274 6.02717 12.7153 4.25455 12.1866L0.412512 11.0113C0.412512 11.0113 -1.0058 10.1302 1.41738 9.24918C7.32775 6.48822 14.5973 3.66863 21.0388 1.02493H21.0399Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.git{
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 0C4.9225 0 0 4.8176 0 10.7656C0 15.5294 3.14875 19.553 7.52125 20.9794C8.07125 21.0736 8.2775 20.7507 8.2775 20.4681C8.2775 20.2124 8.26375 19.3646 8.26375 18.463C5.5 18.9609 4.785 17.8036 4.565 17.198C4.44125 16.8885 3.905 15.9331 3.4375 15.6774C3.0525 15.4755 2.5025 14.9776 3.42375 14.9642C4.29 14.9507 4.90875 15.7447 5.115 16.0676C6.105 17.6959 7.68625 17.2384 8.31875 16.9558C8.415 16.256 8.70375 15.785 9.02 15.5159C6.5725 15.2468 4.015 14.3182 4.015 10.2004C4.015 9.02963 4.44125 8.06073 5.1425 7.30714C5.0325 7.038 4.6475 5.93453 5.2525 4.45426C5.2525 4.45426 6.17375 4.17166 8.2775 5.55773C9.1575 5.31551 10.0925 5.19439 11.0275 5.19439C11.9625 5.19439 12.8975 5.31551 13.7775 5.55773C15.8813 4.15821 16.8025 4.45426 16.8025 4.45426C17.4075 5.93453 17.0225 7.038 16.9125 7.30714C17.6138 8.06073 18.04 9.01618 18.04 10.2004C18.04 14.3317 15.4688 15.2468 13.0213 15.5159C13.42 15.8523 13.7638 16.4983 13.7638 17.5075C13.7638 18.9474 13.75 20.1047 13.75 20.4681C13.75 20.7507 13.9563 21.0871 14.5063 20.9794C16.6901 20.2581 18.5877 18.8846 19.932 17.0524C21.2764 15.2201 21.9996 13.0213 22 10.7656C22 4.8176 17.0775 0 11 0Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mail{
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_64_319' fill='white'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.000244141 3.15124V12.0001C0.000244141 13.6569 1.34339 15.0001 3.00024 15.0001H17.0002C18.6571 15.0001 20.0002 13.6569 20.0002 12.0001V3.15198L12.728 10.4242C11.2217 11.9305 8.77951 11.9305 7.2732 10.4242L0.000244141 3.15124ZM19.5726 1.65083C19.5317 1.76205 19.4654 1.86854 19.3707 1.96323L11.8189 9.51506C10.8147 10.5193 9.18654 10.5193 8.18234 9.51506L0.630515 1.96323C0.535653 1.86837 0.469259 1.76168 0.4284 1.65024C0.889013 0.956965 1.67701 0.5 2.57174 0.5H17.4289C18.3239 0.5 19.1121 0.957224 19.5726 1.65083Z'/%3E%3C/mask%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.000244141 3.15124V12.0001C0.000244141 13.6569 1.34339 15.0001 3.00024 15.0001H17.0002C18.6571 15.0001 20.0002 13.6569 20.0002 12.0001V3.15198L12.728 10.4242C11.2217 11.9305 8.77951 11.9305 7.2732 10.4242L0.000244141 3.15124ZM19.5726 1.65083C19.5317 1.76205 19.4654 1.86854 19.3707 1.96323L11.8189 9.51506C10.8147 10.5193 9.18654 10.5193 8.18234 9.51506L0.630515 1.96323C0.535653 1.86837 0.469259 1.76168 0.4284 1.65024C0.889013 0.956965 1.67701 0.5 2.57174 0.5H17.4289C18.3239 0.5 19.1121 0.957224 19.5726 1.65083Z' fill='white'/%3E%3Cpath d='M0.000244141 3.15124L0.353798 2.79768L-0.499756 1.94413V3.15124H0.000244141ZM20.0002 3.15198H20.5002V1.94487L19.6467 2.79842L20.0002 3.15198ZM12.728 10.4242L13.0816 10.7777H13.0816L12.728 10.4242ZM7.2732 10.4242L6.91965 10.7777L7.2732 10.4242ZM19.3707 1.96323L19.7243 2.31679L19.7243 2.31678L19.3707 1.96323ZM19.5726 1.65083L20.0419 1.82331L20.1294 1.5854L19.9891 1.37425L19.5726 1.65083ZM11.8189 9.51506L11.4653 9.1615L11.8189 9.51506ZM8.18234 9.51506L7.82879 9.86861L8.18234 9.51506ZM0.630515 1.96323L0.984069 1.60968L0.984069 1.60968L0.630515 1.96323ZM0.4284 1.65024L0.0119395 1.37354L-0.128242 1.58453L-0.0410403 1.82236L0.4284 1.65024ZM0.500244 12.0001V3.15124H-0.499756V12.0001H0.500244ZM3.00024 14.5001C1.61953 14.5001 0.500244 13.3808 0.500244 12.0001H-0.499756C-0.499756 13.9331 1.06725 15.5001 3.00024 15.5001V14.5001ZM17.0002 14.5001H3.00024V15.5001H17.0002V14.5001ZM19.5002 12.0001C19.5002 13.3808 18.381 14.5001 17.0002 14.5001V15.5001C18.9332 15.5001 20.5002 13.9331 20.5002 12.0001H19.5002ZM19.5002 3.15198V12.0001H20.5002V3.15198H19.5002ZM19.6467 2.79842L12.3745 10.0706L13.0816 10.7777L20.3538 3.50553L19.6467 2.79842ZM12.3745 10.0706C11.0634 11.3817 8.9378 11.3817 7.62675 10.0706L6.91965 10.7777C8.62122 12.4793 11.38 12.4793 13.0816 10.7777L12.3745 10.0706ZM7.62675 10.0706L0.353798 2.79768L-0.353309 3.50479L6.91965 10.7777L7.62675 10.0706ZM19.7243 2.31678C19.8699 2.1712 19.9759 2.00305 20.0419 1.82331L19.1033 1.47835C19.0876 1.52106 19.061 1.56588 19.0172 1.60968L19.7243 2.31678ZM12.1724 9.86861L19.7243 2.31679L19.0172 1.60968L11.4653 9.1615L12.1724 9.86861ZM7.82879 9.86861C9.02825 11.0681 10.973 11.0681 12.1724 9.86861L11.4653 9.1615C10.6564 9.97045 9.34484 9.97045 8.53589 9.1615L7.82879 9.86861ZM0.276962 2.31679L7.82879 9.86861L8.53589 9.1615L0.984069 1.60968L0.276962 2.31679ZM-0.0410403 1.82236C0.0249904 2.00245 0.131115 2.17094 0.276962 2.31679L0.984069 1.60968C0.94019 1.5658 0.913527 1.5209 0.897839 1.47812L-0.0410403 1.82236ZM2.57174 0C1.50255 0 0.561276 0.54673 0.0119395 1.37354L0.84486 1.92694C1.21675 1.3672 1.85147 1 2.57174 1V0ZM17.4289 0H2.57174V1H17.4289V0ZM19.9891 1.37425C19.4399 0.54704 18.4984 0 17.4289 0V1C18.1494 1 18.7842 1.36741 19.1561 1.92741L19.9891 1.37425Z' fill='white' fill-opacity='0.3' mask='url(%23path-1-inside-1_64_319)'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    top: 26px;
+    right: 40px;
+}
+
+.contacts-block{
+    position: relative;
+    max-width: 450px;
+    z-index: 1;
+}
+
+.photo{
+    height: 400px;
+    background-image: url('/assets/photo-contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.title-contact-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.introduce-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.introduce-block p{
+    width: 690px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.skills-block{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+}
+
+.vector-skills-block{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1008' height='20' viewBox='0 0 1008 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_64_195)'%3E%3Crect width='60' height='20' transform='translate(57)' fill='black'/%3E%3Cpath d='M57 0.5C68.5 0.5 82 6 87 19.5C92.0177 6.02722 106 0.5 117 0.5' stroke='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_64_195'%3E%3Crect width='60' height='20' fill='white' transform='translate(57)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    top: -1px;
+    left: 56px;
+}
+
+.skills-element{
+    min-height: 150px;
+    margin: 29px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 1px solid #ffffff67;
+}
+
+.skills-element:first-child{
+    margin: 40px 29px 29px 29px;
+}
+
+.skills-element-title{
+    display: block;
+    width: 124px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.skills-element-title-block{
+    display: flex;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-elem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-elem span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.list-elem span:last-child{
+    opacity: 0.4;
+}
+
+.list-row{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    text-transform: uppercase;
+}
+
+.list-row span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.contact-info{
+    border-radius: 24px 24px 0px 0px;
+    min-height: 454px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #F51B1B;
+    color: white;
+    padding: 24px;
+    position: relative;
+    top: -45px;
+}
+
+.vector-contact-info{
+    position: absolute;
+    width: 60px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='19' viewBox='0 0 60 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M29.9999 0C31.4999 8.99996 43.4998 17.7157 59.9999 19L30 19L29.9999 19L0 19C16.5 17.7157 28.5 8.99997 29.9999 0Z' fill='%23F51B1B'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -19px;
+    left: 175px;
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+
+.age{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.contact-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-element span{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+
+.introduce-block ul{
+    width: 690px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 30px;
+    letter-spacing: -0.01em;
+    list-style-type: decimal;
+}
+
+@media screen and (max-width: 360px) {
+    .main{
+        max-width: 360px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo{
+        position: static;
+        padding: 20px;
+    }
+
+    .contacts-block{
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .contacts-block img{
+        max-width: 320px;
+        height: auto;
+    }
+
+    .introduce-block{
+        width: 320px;
+        margin: auto auto 30px auto;
+    }
+
+    .introduce-block p{
+        width: 320px;
+    }
+
+    .introduce-block ul{
+        width: 280px;
+        margin: auto;
+    }
+
+    .contact-element span{
+        font-size: medium;
+    }
+
+    .contact-info{
+        min-height: auto;
+    }
+
+    .list-row{
+        flex-wrap: wrap;
+    }
+
+    .skills-block{
+        width: 320px;
+    }
+
+    .skills-element{
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .vector-skills-block{
+        left: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='320' height='20' viewBox='0 0 320 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_56_968)'%3E%3Crect width='60' height='20' transform='translate(130)' fill='black'/%3E%3Cpath d='M130 0.5C141.5 0.5 155 6 160 19.5C165.018 6.02722 179 0.5 190 0.5' stroke='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_56_968'%3E%3Crect width='60' height='20' fill='white' transform='translate(130)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    }
+}
